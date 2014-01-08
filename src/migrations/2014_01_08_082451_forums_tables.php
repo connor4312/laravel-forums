@@ -18,6 +18,8 @@ class ForumsTables extends Migration {
             $table->increments('id')->unsigned();
             $table->string('title');
             $table->integer('stat_views')->unsigned()->default(0);
+            $table->integer('parent_id')->default(-1);
+            $table->integer('order')->default(0);
             $table->text('description');
             $table->timestamps();
         });
