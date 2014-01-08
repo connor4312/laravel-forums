@@ -1,0 +1,31 @@
+{
+    "name": "connor4312/laravel-forums",
+    "description": "Forums package for Laravel",
+    "authors": [
+        {
+            "name": "Connor Peet",
+            "email": "connor@connorpeet.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*",
+        "illuminate/database": "4.1.*",
+        "illuminate/pagination": "4.1.*",
+        "illuminate/validation": "4.1.*",
+        "illuminate/config": "4.1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.8.*",
+        "mockery/mockery": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Connor4312\\LaravelForums\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
